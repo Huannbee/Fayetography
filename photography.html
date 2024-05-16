@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style-photography.css"> 
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+    <title>Fayetography Photos</title>
+</head>
+<body>
+    <div class="container">
+        <!--the title logo and nav-->
+        <div class="header">
+            <div class="logo" data-aos="fade-down" data-aos-duration="800">Chlxyfyy Photography</div>
+            <ul data-aos="fade-down" data-aos-duration="800">
+                <a href="index.html"><li class="button">Home</li></a>
+                <a href="artwork.html"><li class="button">Artwork</li></a>
+                <a href="cinematography.html"><li class="button">Cinematography</li></a>
+            </ul>
+        </div> 
+        <div class="description">
+
+        </div>
+        <!--Image Box in the center-->
+       <div class="imgbox1">
+        <div data-aos="zoom-in-up" data-aos-duration="800"><img class="img1" src="Assets/BIRD.jpg"></div>
+        </div>
+        <!--image that i show when i click it-->
+    
+            <ul class="pics">
+                <li><a href="Assets/BIRD.jpg" target="imgbox"><img src="Assets/BIRD.jpg" width="150px"><div class="text2">
+                    <h4>Bird</h4>
+                    <p>Birb on the roof</p>
+                </div></a></li>
+
+                <li><a href="Assets/flower.jpg" target="imgbox"><img src="Assets/flower.jpg" width="150px"><div class="text2">
+                    <h4>Bougainvilliea</h4>
+                    <p>Free as the clouds</p>
+                </div></a></li>
+
+                <li><a href="Assets/bridge.jpg" target="imgbox"><img src="Assets/bridge.jpg" width="150px"><div class="text2">
+                    <h4>Bridge</h4>
+                    <p>Night Seascape</p>
+                </div></a></li>
+
+                <li><a href="Assets/white.jpg" target="imgbox"><img src="Assets/white.jpg" width="150px"><div class="text2">
+                    <h4>Unique Flower</h4>
+                    <p>A beautiful warmth</p>
+                </div></a></li>
+
+                <li><a href="Assets/border.jpg" target="imgbox"><img src="Assets/border.jpg" width="150px"><div class="text3">
+                    <h4>Border Roof</h4>
+                    <p>Randomness</p>
+                </div></a></li>
+
+            </ul>
+            <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            <script type="text/javascript">
+                AOS.init();
+        
+            $(document).ready(function(){
+                $('.pics a').click(function(e){
+                 e.preventDefault();
+                 $('.imgbox1 img').attr("src", $(this).attr("href"));       
+                })
+            })
+       </script>
+       </div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style-cinematography.css"> 
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+    <title>Fayetography Cinematography</title>
+</head>
+<body>
+    
+    <div class="container">
+        <!--the title logo and nav-->
+        <div class="header">
+          <div class="logo">Cinematography Gallery</div>
+            <ul>
+                <a href="index.html"><li class="button">Home</li></a>
+                <a href="photography.html"><li class="button">Photography</li></a>
+                <a href="artwork.html"><li class="button">Artwork</li></a>
+            </ul>
+        </div> 
+        <div class="videocontainer">
+            <div class="video">
+                    <video src="/Assets/Videos/Random Clips by Chloe.mp4" loop></video>
+            </div>
+
+            <div class="video">
+                    <video src="/Assets/Videos/Beautiful Things.mp4"  loop></video>
+            </div>
+
+            <div class="video">
+                    <video src="/Assets/Videos/Coffee.mp4"  loop></video>
+            </div>
+
+            <div class="video">
+                    <video src="/Assets/Videos/Fayetography.mp4"  loop></video>
+            </div>
+
+            <div class="video">
+                    <video src="/Assets/Videos/Oh what a day.mp4"  loop></video>
+            </div>
+
+            <div class="video">
+                     <video src="/Assets/Videos/UB Days.mp4"  loop></video>
+            </div>
+
+            <div class="video">
+                <video src="/Assets/Videos/a reminder.mp4"  loop></video>
+            </div>
+
+             <div class="video">
+             <video src="/Assets/Videos/Master Ooway.mp4"  loop></video>
+            </div>
+        </div>
+     </div>
+
+     <script>
+
+       var video = document.querySelectorAll('video');
+        video.forEach(play => play.addEventListener('click', () => {
+         play.classList.toggle('active');
+         
+         if(play.paused){
+            play.play();
+         }else{
+            play.pause();
+            play.currentTime = 0;
+         }
+        }));
+
+     </script>
+</body>
+</html>

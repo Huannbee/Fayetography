@@ -1,0 +1,114 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:"Poppins", sans-serif;
+}
+.text2{
+    position: absolute;
+    color:aliceblue;
+    text-align: center;
+}
+.text3{
+    position: absolute;
+    color:aliceblue;
+    text-align: center;
+
+}
+body{
+    background-image: url("/Assets/white.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*header nav and logo*/
+.header{
+    padding:1.5rem;
+    display:flex;
+   justify-content: space-between;
+   max-width: 1200px;
+   margin: 0 auto;
+   align-items: center;
+}
+.header .logo{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
+    font-size: 25px;
+    color: white;
+}    
+.header a{
+    text-decoration: none;
+    color: white;
+}
+.header ul{
+    color: white;
+    display: flex;
+    list-style: none;
+    gap: 5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-size: 16px;
+    cursor: pointer;
+}
+.header .button{
+        background: rgba( 255, 255, 255, 0.25 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 4px );
+        -webkit-backdrop-filter: blur( 4px );
+        border-radius: 50px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        padding: 12px 30px;
+        letter-spacing: 2px;
+        transition: 1s ease;
+    }
+    .header .button:hover{
+        transition: 1s ease;
+        transform: scale(1.2);
+    }
+/*Image onclick*/
+.imgbox1 .img1{
+    margin-left: 340px;
+    width: 1080px;
+    height: 600px;
+    align-items: center;
+    border-radius: 20px;
+}
+.imgbox{
+    width: 1080px;
+    height: 800px;
+    margin: 10px auto 20px;
+    border-radius: 20px;
+}
+.pics{
+    margin: 0 auto;
+    padding: 0 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    
+}
+.pics li{
+    list-style: none;
+    gap: 2rem;
+    margin: 0 10px;
+}
+.pics img{
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 20px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border: none;
+    transition: 1s ease;
+}
+.pics img:hover{
+    transition: 1s ease;
+	transform: scale(1.2);
+}
+.imgbox .img1{
+    height: 700px;
+}

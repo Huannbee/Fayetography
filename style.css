@@ -1,0 +1,187 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", sans-serif;
+}
+/*The header of my home page and the glass border, navigation, and Logo.*/
+.header{
+    padding:1.5rem;
+    display:flex;
+   justify-content: space-between;
+   max-width: 1200px;
+   margin: 0 auto;
+   align-items: center;
+}
+.header .logo{
+text-transform: uppercase;
+letter-spacing: 3px;
+font-weight: 600;
+font-size: 25px;
+color: white;
+cursor: default;
+}
+
+.header a{
+    text-decoration: none;
+    color: white;
+}
+
+.header ul{
+   display:flex;
+   list-style: none;
+   gap: 5rem;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   font-weight: 500px;
+   font-size: 16px;
+   color: white;
+   cursor: pointer;
+}
+.header .button{
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 50px;
+    border: 0px solid rgba( 255, 255, 255, 0.18 );
+    padding: 12px 30px;
+    letter-spacing: 2px;
+    transition: 1s ease;
+    border: none;
+}
+.header .button:hover{
+    transition: 1s ease;
+	transform: scale(1.2);
+}
+.banner{
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: -1;
+    transition: 1s ease;
+}
+.banner .glasswrapper{
+    width: 30%;
+    height: 100%;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+/* Discovery and Fayetography all the text inside the banner(glassborder) and visit button*/
+.hero-title{
+    max-width: 1200px;
+    margin: 0px auto;
+    padding-top: 13rem;
+    cursor: default;
+}
+.hero-title p{
+    font-size: 47px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 60px;
+    color: white;
+    cursor: default;
+}
+.hero-title .discover{
+    font-size: 85px;
+    letter-spacing: 3px;
+}
+.hero-title .details{
+    width: 60%;
+    padding-top: 1.5rem;
+    font-weight: 200;
+    letter-spacing: 1.5px;
+    padding-bottom: 2.5rem;
+    color: white;
+}
+.hero-title button{
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border: none;
+    color: white;
+    padding: 12px 50px;
+    border-radius: 50px;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    transition: 1s; 
+}
+.hero-title button:hover{
+    transition: 1s ease;
+	transform: scale(1.2);
+
+}
+.hero-title a{
+    text-decoration: none;
+    color: white;
+    
+}
+/*3 pictures that redirect you to different web*/
+.project-list{
+    bottom: 25px;
+    position: fixed;
+    left: 45rem;
+}
+.project-list p{
+    color: white;
+    padding-left: 20px;
+    margin-bottom: auto;
+    line-height: 24px;
+}
+.project-list .thumbnail-photography{
+    display: flex;
+    height: 10rem;
+    width: 18rem;
+    background-size: cover !important;
+    border-radius: 8px;
+    flex-direction: column;
+}
+.project-list .thumbnail-photography .details{
+    margin-top: auto;
+    padding: 10px 0px;
+    background: rgba( 255, 255, 255, 0.25 );
+    backdrop-filter: blur( 1px );
+    -webkit-backdrop-filter: blur( 1px );
+    border-radius: 10px;
+    
+}
+.project-list ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    width: 65vw;
+    height: 14rem;
+    align-items: center;
+    cursor: pointer;
+}
+.details .gallery{
+    font-size: 24px;
+    font-weight: 600;
+}
+.details .works{
+     font-weight: 300;
+     font-size: 15px;
+     color: white;
+}
+.project-list .active{
+    margin-top: -2rem;
+}
+.project-list a{
+    text-decoration: none;
+}
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+}
+
+

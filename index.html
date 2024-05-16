@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Fayetography</title>
+</head>
+<body>
+    <!--this is the text logo, background img, and nav -->
+    <div class="container">
+        <div class="header">
+            <div class="logo">Chlxyfyy</div>
+            <ul>
+                <a href="photography.html"><li class="button">Photography</li></a>
+                <a href="artwork.html"><li class="button">Artworks</li></a>
+                <a href="cinematography.html"><li class="button">Cinematography</li></a>
+            </ul>
+        </div>
+        <div class="banner" style="background-image: url('Assets/white.jpg')">
+            <div class="glasswrapper">
+        </div>
+    </div>
+    <!--Title and description(lorem random words)-->
+        <div class="hero-title">
+            <p>discover</p>
+            <p class="discover">Fayetography</p>
+            <div class="details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt doloribus explicabo ad in exercitationem id reprehenderit harum dolore modi quas nulla, sit eveniet et eum maxime totam excepturi cum maiores.</div>
+            <div class="visit"><a href="https://web.facebook.com/profile.php?id=100086950001927" target="other"><button>Visit</button></a></div>
+        </div>
+    <!--Three images on the bottom right-->
+        <div class="project-list">
+            <ul class="work-list">
+                <li class="active" data-img="Assets/white.jpg"><a href="photography.html">
+                    <div class="thumbnail-photography" style="background-image: url('Assets/white.jpg');">
+                        <div class="details">
+                            <p class="works">Photography</p>
+                            <p class="gallery">Gallery</p>
+                        </div>
+                    </div></a>
+                </li>
+                <li data-img="Assets/border.jpg"><a href="cinematography.html"><div class="thumbnail-photography" style="background-image: url('Assets/border.jpg');">
+                    <div class="details">
+                        <p class="works">Cinematography</p>
+                        <p class="gallery">Gallery</p>
+                    </div>
+                </div></a>
+            </li>
+                <li data-img="Assets/migu.jpg"><a href="artwork.html"><div class="thumbnail-photography" style="background-image: url('Assets/migu.jpg');">
+                    <div class="details">
+                        <p class="works">Artworks</p>
+                        <p class="gallery">Gallery</p>
+                    </div>
+                </div></a>
+            </li>
+            </ul>
+        </div>
+     </div>
+     
+     <!--animations for the web-->
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script>
+          AOS.init();
+        //this is for the 3 images hover//
+        let places = document.querySelectorAll('.work-list li');
+        let active = "Assets/flower.jpg";
+        places.forEach((e) => {
+            e.addEventListener("mouseenter", (event) =>{
+                places.forEach((e) => {
+                    e.classList.remove("active");
+                });
+                event.target.classList.add("active");
+                active = event.target.getAttribute('data-img')
+                let banner = document.querySelector('.banner')
+                banner.style.backgroundImage = `url('${active}')` 
+            });
+        });
+     </script>
+</body>
+</html>
