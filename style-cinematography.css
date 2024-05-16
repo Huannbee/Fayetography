@@ -13,7 +13,7 @@
   fill-opacity: inherit;
 }
 body{
-    background-image: url("Assets/BIRD.jpg");
+    background-image: url("/Assets/BIRD.jpg");
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
