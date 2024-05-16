@@ -15,7 +15,7 @@
 
 }
 body{
-    background-image: url("/Assets/white.jpg");
+    background-image: url("Assets/white.jpg");
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
